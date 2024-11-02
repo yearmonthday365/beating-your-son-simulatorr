@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #gameCanvas {
+            border: 1px solid black;
+            margin-bottom: 20px;
+        }
+        #inventoryPanel {
+            display: none;
+            margin: 10px;
+        }
+        #shopPanel {
+            display: none;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    
+    <div id="inventoryPanel">
+        <h3>Inventory</h3>
+        <ul id="inventoryItems"></ul>
+        <button id="equipButtonSlipper">Equip Slipper</button>
+        <button id="equipButtonBottle">Equip Bottle</button>
+    </div>
+    
+    <button id="shopButton">Open Shop</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
